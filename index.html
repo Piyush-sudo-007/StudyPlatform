@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate||Online Learning</title>
+    <link rel="stylesheet" href="folder/CSS/desktop.css">
+    <link rel="stylesheet" href="folder/CSS/phone.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar background h-resp">
+        <div class="logo v-resp">
+            <img src="folder/image/oc.jpg" alt="logo">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightNav v-resp">
+            <input type="text" name="search" id="search" placeholder="Search">
+            <button type="button" id="search-btn">
+                <div class="circle"></div>
+                <div class="handle"></div>
+            </button>
+        </div>
+        <div class="burger">
+            <button type="button" id="search-btn" class="hb">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+    </nav>
+    <hr>
+    <section class="background" id="about">
+        <div class="sec-left">
+            <p class="text-big">
+                Transforming India's Education
+            </p>
+            <p class="text-small">We have taken the measures to educate each and every persons of especially India to
+                make India a better country. <br>The need of education is very severe to make a country country strong a
+                heavenlly place to live.</p>
+            <button class="btn">Demo Classes</button>
+            <button class="btn">Subscribe</button>
+        </div>
+        <div class="sec-right">
+            <img src="folder/image/oc.jpg" alt="logo">
+        </div>
+    </section>
+    <section class="body-main" id="services">
+        <div class="box">
+            <div class="para">
+                <p class="text-big">Bringing Education In your Pocket</p>
+                <p class="text-small">This platform provides all the relevant and necessary materials to your iEducate
+                    account or platform. <br> With the best mentors and teachers you can upskill your self and can
+                    access better standard test papers and daily practice papers.</p>
+            </div>
+            <div class="image">
+                <img src="folder/image/pe.png" alt="image">
+            </div>
+        </div>
+        <div class="box1">
+            <div class="para">
+                <p class="text-big">Updating you with skills</p>
+                <p class="text-small">Assessing the skills of each employee is essential. This will enable you to become
+                    aware of the individual needs of each employee and to adapt skill development projects. Do not
+                    hesitate to value employees' strong points to increase their motivation and to create an adapted
+                    skills' development plan for them.</p>
+            </div>
+            <div class="image">
+                <img src="folder/image/oc.png" alt="image">
+            </div>
+        </div>
+        <div class="box">
+            <div class="para">
+                <p class="text-big">Supporting Nature</p>
+                <p class="text-small">E-learning can have a positive impact on the environment by reducing the need for
+                    travel, paper, and energy consumption. According to a study by the Open University, e-learning
+                    courses can produce 90% less CO2 emissions than traditional campus-based courses. E-learning can
+                    also save water, trees, and landfill space by eliminating the use of printed materials and physical
+                    classrooms. By choosing e-learning, you can contribute to the global efforts to reduce greenhouse
+                    gas emissions and preserve natural resources.</p>
+            </div>
+            <div class="image">
+                <img src="folder/image/lp.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="text-big">Contact Us</p>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="number" name="phone" placeholder="Enter your phone number">
+            <input type="email" name="email" placeholder="Enter your email">
+            <textarea name="concern" id="concern" placeholder="Write your concern"></textarea>
+            <button id="form-btn" type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>Copyright &copy; iEducate || All rights reserved</footer>
+    <script>
+        let burger = document.querySelector('.burger');
+        let navbar = document.querySelector('.navbar');
+        let logo = document.querySelector('.logo');
+        let rightNav = document.querySelector('.rightNav');
+
+        burger.addEventListener('click', ()=>{
+            navbar.classList.toggle('h-resp');
+            rightNav.classList.toggle('v-resp');
+            logo.classList.toggle('v-resp');
+        })
+    </script>
+</body>
+
+</html>
